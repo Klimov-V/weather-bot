@@ -1,0 +1,26 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "node-telegram-bot-api": "^0.50.0",
+    "translate": "^1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klimov-V/weather-bot.git"
+  },
+  "author": "Vitaliy Klimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Klimov-V/weather-bot/issues"
+  },
+  "homepage": "https://github.com/Klimov-V/weather-bot#readme"
+}
