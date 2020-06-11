@@ -38,11 +38,13 @@ bot.onText(/(.+)/, function (msg) {
             sunset = `${('0' + sunset.getHours()).slice(-2)}:${('0' + sunset.getMinutes()).slice(-2)}`
             
     
-            let text = "Виталик\n" + result.name + ":\nТемпература: " + result.main.temp + "C\nОщущается как "
+            let text = `<b>Виталик</b>\n` + result.name + ":\nТемпература: " + result.main.temp + "C\nОщущается как "
                         + result.main.feels_like + "C,\n" + result.weather[0].description + '.\nСкорость ветра '
                         + result.wind.speed + "м/с.\nРассвет в " + sunrise + ", закат в " + sunset + ".";
     
-            bot.sendMessage(TELEGRAM_CHANEL_ID, text);
+            bot.sendMessage(TELEGRAM_CHANEL_ID, text, {
+                "parse_mode": "HTML"
+            });
         });
     })
 
